@@ -12,10 +12,12 @@ namespace HookINCS
     {
         private Hook hook;
 
+        #region 初始化组件
         public Form1()
         {
             InitializeComponent();
         }
+        #endregion
 
         private void button1_Click(object sender, EventArgs e)
         {
