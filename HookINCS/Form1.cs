@@ -34,9 +34,11 @@ namespace HookINCS
             hook.UninstallKeyBoardHook();
         }
 
+        #region 窗体加载事件
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
+        #endregion
     }
 }
