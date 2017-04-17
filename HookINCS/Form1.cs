@@ -10,7 +10,9 @@ namespace HookINCS
 {
     public partial class Form1 : Form
     {
+        #region 变量定义
         private Hook hook;
+        #endregion
 
         #region 初始化组件
         public Form1()
@@ -28,10 +30,12 @@ namespace HookINCS
         }
         #endregion
 
+        #region OnKetDown
         private void OnKeyDown(object sender, KeyEventArgs e) 
         {
             MessageBox.Show(e.KeyCode.ToString() + " KeyPress");
         }
+        #endregion
 
         #region 抽调钩子
         private void button2_Click(object sender, EventArgs e)
