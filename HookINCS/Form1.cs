@@ -19,22 +19,26 @@ namespace HookINCS
         }
         #endregion
 
+        #region 注册钩子
         private void button1_Click(object sender, EventArgs e)
         {
             hook = Hook.GetInstance();
             hook.OnKeyPress += new KeyEventHandler(OnKeyDown);
             hook.InstallKeyBoardHook();
         }
+        #endregion
 
         private void OnKeyDown(object sender, KeyEventArgs e) 
         {
             MessageBox.Show(e.KeyCode.ToString() + " KeyPress");
         }
 
+        #region 抽调钩子
         private void button2_Click(object sender, EventArgs e)
         {
             hook.UninstallKeyBoardHook();
         }
+        #endregion
 
         #region 窗体加载事件
         private void Form1_Load(object sender, EventArgs e)
